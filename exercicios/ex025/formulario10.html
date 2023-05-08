@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo formulario</h1>
+    <form action="cadastro.php">
+        <div>
+            <label for="iano">Ano que vc nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" required oninput="iresp.innerHTML = Number(2023) - Number(iano.value)">
+        </div>
+
+        <div>
+            <label for="idade">Sua idade é</label>
+            <output id="iresp"></output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
